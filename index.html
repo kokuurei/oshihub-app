@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OshiHub — 推し活VTuberアプリ</title>
+<meta name="description" content="複数のVtuberを推すファンのための、配信状況・最新動画をまとめて確認できるiOSアプリ（開発中）">
+<style>
+  :root {
+    --bg: #FAF6F7;
+    --surface: #FFFFFF;
+    --text: #2A2230;
+    --text-muted: #6E6274;
+    --border: rgba(42,34,48,0.12);
+    --accent: #C22B5E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16121C;
+      --surface: #201A29;
+      --text: #F1EAF4;
+      --text-muted: #B3A6BC;
+      --border: rgba(241,234,244,0.14);
+      --accent: #FF86B2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 80px; }
+  .eyebrow {
+    font-size: 12.5px; letter-spacing: 0.1em; color: var(--accent);
+    font-weight: 700; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(28px, 5vw, 38px); font-weight: 800; margin: 0 0 16px; }
+  .lede { color: var(--text-muted); font-size: 16px; max-width: 60ch; margin: 0 0 40px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 24px; margin-bottom: 16px;
+  }
+  .card h2 { font-size: 16px; margin: 0 0 8px; }
+  .card p { font-size: 14px; color: var(--text-muted); margin: 0; }
+  .status {
+    display: inline-flex; align-items: center; gap: 8px; font-size: 13px;
+    color: var(--text-muted); background: var(--surface); border: 1px solid var(--border);
+    padding: 6px 14px; border-radius: 999px; margin-bottom: 32px;
+  }
+  footer { margin-top: 48px; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 20px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">OSHIHUB</p>
+    <h1>複数の推し(VTuber)を、ひとつのアプリで。</h1>
+    <p class="lede">
+      OshiHubは、複数のVTuberを応援するファンのためのiOSアプリです。
+      登録したVTuberの配信状況・最新動画をまとめて確認でき、
+      YouTube / Twitchをまたいだ視聴、応援リンクの整理などをサポートします。
+    </p>
+
+    <span class="status">🚧 現在開発中（個人開発・未リリース）</span>
+
+    <div class="card">
+      <h2>主な機能</h2>
+      <p>複数VTuberの登録・配信通知、マルチビュー視聴、埋め込みライブチャット、応援リンク（X / BOOTH / マシュマロ）の整理</p>
+    </div>
+    <div class="card">
+      <h2>使用しているAPI</h2>
+      <p>YouTube Data API v3（チャンネル情報・配信状況・最新動画の取得）を利用しています</p>
+    </div>
+    <div class="card">
+      <h2>開発者</h2>
+      <p>個人開発者による開発です。お問い合わせは GitHub アカウント経由でお願いします。</p>
+    </div>
+
+    <footer>
+      &copy; 2026 OshiHub Project — <a href="https://github.com/kokuurei">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>

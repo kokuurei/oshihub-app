@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー — OshiHub</title>
+<title>プライバシーポリシー — OshiVerse</title>
 <style>
   :root {
     --bg: #FAF6F7; --surface: #FFFFFF; --text: #2A2230;
@@ -32,24 +32,44 @@
 <body>
   <div class="wrap">
     <h1>プライバシーポリシー</h1>
-    <p class="updated">最終更新日: 2026年7月17日</p>
+    <p class="updated">最終更新日: 2026年7月29日</p>
 
-    <p>OshiHub（以下「本アプリ」）は、個人開発者が開発するiOSアプリです。本ポリシーは、本アプリの情報の取り扱いについて説明します。</p>
+    <p>OshiVerse（以下「本アプリ」）は、個人開発者が開発するiOSアプリです。本ポリシーは、本アプリがどのような情報を取得し、どのように利用・処理・共有するかを説明します。</p>
 
-    <h2>取得する情報</h2>
-    <p>本アプリは、ユーザーの氏名・メールアドレス・位置情報などの個人情報を収集しません。ユーザーが登録したVTuberのチャンネル情報（表示用のチャンネル名・アイコン・登録者数・動画情報など）は、YouTube Data API v3を通じて取得し、お使いの端末内にのみ保存されます。</p>
+    <h2>1. YouTube API Servicesの利用について</h2>
+    <p>本アプリはYouTube API Servicesを利用しています。本アプリを利用することにより、ユーザーは<a href="https://www.youtube.com/t/terms">YouTube利用規約</a>および<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>に同意したものとみなされます。</p>
 
-    <h2>外部サーバーへの送信</h2>
-    <p>本アプリは自社サーバーを保有しておらず、取得した情報を外部サーバーへ送信することはありません。すべてのデータは端末内（UserDefaults）に保存されます。</p>
-
-    <h2>外部サービスの利用</h2>
+    <h2>2. 取得する情報と利用目的</h2>
     <ul>
-      <li><strong>YouTube Data API v3 / IFrame Player API</strong>: チャンネル情報の取得、動画の埋め込み再生に使用しています。YouTubeの利用については<a href="https://policies.google.com/privacy">Googleのプライバシーポリシー</a>もあわせてご確認ください。</li>
-      <li><strong>Twitch Embed API</strong>: Twitchチャンネルの埋め込み再生に使用しています。</li>
+      <li><strong>YouTubeの公開情報</strong>（チャンネル名・アイコン画像・登録者数・動画のタイトルや統計・配信状況など）: YouTube Data APIを通じて取得し、アプリ内での表示のためにのみ利用します。</li>
+      <li><strong>Googleアカウント情報</strong>（ユーザーID・アクセストークン）: ユーザーが任意でGoogleログインした場合にのみ取得します。ライブチャットへのコメント投稿と、推しリストのクラウド同期のために利用します。ログインしなくても本アプリの主要機能は利用できます。</li>
+      <li><strong>プッシュ通知用トークン</strong>（Appleが発行するデバイストークン）: 配信開始通知の送信のために利用します。</li>
+    </ul>
+    <p>本アプリは、ユーザーの氏名・住所・位置情報などを収集しません。</p>
+
+    <h2>3. 情報の処理と共有（内部・外部での取り扱い）</h2>
+    <ul>
+      <li><strong>端末内での保存</strong>: 登録した推しリストやYouTubeから取得した表示用データは、お使いの端末内に保存されます。</li>
+      <li><strong>開発者のサーバーへの送信</strong>: 次の情報は、本アプリの機能提供のために開発者が管理するサーバー（Google Cloud / Firebase）へ送信・保存されます。①プッシュ通知の配信に必要なデバイストークンとフォロー中のYouTubeチャンネルID一覧、②Googleログイン利用時の推しリスト（クラウド同期用）、③推し追加時のチャンネル公開情報（アプリ内のVTuber名簿の充実のため。「誰がフォローしているか」は送信されません）。</li>
+      <li><strong>第三者への提供</strong>: 上記のGoogle Cloud / Firebase（インフラ提供者）による処理を除き、取得した情報を第三者に販売・共有・提供することはありません。広告目的での利用も行いません。</li>
     </ul>
 
-    <h2>お問い合わせ</h2>
-    <p>本ポリシーに関するお問い合わせは、<a href="https://github.com/kokuurei">GitHub</a>経由でお願いします。</p>
+    <h2>4. 端末内への情報の保存（Cookie等）</h2>
+    <p>本アプリは、設定や推しリスト等の情報をお使いの端末内（アプリ領域）に保存します。また、本アプリ内のYouTube埋め込みプレイヤーおよびTwitch埋め込みプレイヤーの表示にあたり、YouTube（Google）およびTwitchが、Cookieまたは類似の技術を通じて端末上に情報を保存・アクセスすることがあります。これらの取り扱いは<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>および<a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitchプライバシーノーティス</a>に従います。</p>
+
+    <h2>5. データの保持と削除</h2>
+    <ul>
+      <li>YouTube APIから取得したデータは、アプリ利用中に定期的（数分間隔）に最新の情報へ更新・上書きされます。</li>
+      <li>サーバー上の統計データ（登録者数の推移など）は30日を超えた分から順次削除されます。</li>
+      <li>推しを削除すると、対応する端末内のデータは即座に削除されます。アプリを削除すると端末内の全データが削除されます。</li>
+      <li>サーバーに保存された同期データ等の削除をご希望の場合は、下記の連絡先までご連絡ください。</li>
+    </ul>
+
+    <h2>6. アクセス権の取り消し</h2>
+    <p>Googleログインで本アプリに許可したアクセス権は、<a href="https://myaccount.google.com/permissions">Googleアカウントのセキュリティ設定ページ</a>からいつでも取り消すことができます。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>本ポリシーおよび本アプリの情報の取り扱いに関するお問い合わせは、メール（<a href="mailto:kokuurei@gmail.com">kokuurei@gmail.com</a>）または<a href="https://github.com/kokuurei">GitHub</a>までお願いします。</p>
   </div>
 </body>
 </html>

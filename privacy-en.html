@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — OshiVerse</title>
+<style>
+  :root {
+    --bg: #FAF6F7; --surface: #FFFFFF; --text: #2A2230;
+    --text-muted: #6E6274; --border: rgba(42,34,48,0.12); --accent: #C22B5E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16121C; --surface: #201A29; --text: #F1EAF4;
+      --text-muted: #B3A6BC; --border: rgba(241,234,244,0.14); --accent: #FF86B2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  h1 { font-size: 28px; font-weight: 800; margin: 0 0 8px; }
+  .updated { color: var(--text-muted); font-size: 13px; margin: 0 0 40px; }
+  h2 { font-size: 17px; margin: 32px 0 8px; }
+  p, li { font-size: 15px; color: var(--text-muted); }
+  a { color: var(--accent); }
+  code { font-size: 13px; word-break: break-all; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 5, 2026 ・ <a href="./privacy.html">日本語</a></p>
+
+    <p>OshiVerse (the "App") is an iOS and iPadOS app developed by an individual developer. This policy explains what information the App collects, and how it is used, processed, shared, stored, and deleted.</p>
+
+    <h2>1. Use of YouTube API Services</h2>
+    <p>The App uses YouTube API Services. By using the App, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Please also review the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+    <h2>2. Information We Collect and How We Use It</h2>
+    <ul>
+      <li><strong>Public information from YouTube and Twitch</strong> (channel names, icon images, subscriber counts, video titles and statistics, live-stream status, and similar): Obtained from the YouTube Data API and from public Twitch information, and used only for display within the App.</li>
+      <li><strong>Sign-in with a Google account (optional)</strong>: Only if you sign in to Google through "Link YouTube," the App obtains your Google account identifier and an access token. The access token is stored only on your device and is not sent to the developer's servers. See "3. Handling of Google User Data" for details.</li>
+      <li><strong>Sign-in with Twitch (optional)</strong>: If you sign in to Twitch, the App stores a Twitch access token on your device and uses it to import the channels you follow and to watch subscriber-only streams. The developer's server relays only the authorization code exchanged at sign-in, and does not store the token.</li>
+      <li><strong>Sign in with Apple (optional)</strong>: If you use Sign in with Apple for "Backup &amp; Sync," the App receives only the user identifier issued by Apple. It does not request your name or email address.</li>
+      <li><strong>Data that is synced</strong>: If you are signed in, your oshi (favorite streamers) list (information about the channels you have registered, and notes and other text you have entered), your Multi-View layout order, and your appearance and list-sorting settings are saved on the server so that they stay consistent between your iPhone and iPad.</li>
+      <li><strong>Push notification tokens</strong> (the device token issued by Apple and the Firebase Cloud Messaging token), <strong>the list of channel IDs you follow</strong>, and <strong>your device's language setting</strong>: Used to detect when a stream starts, to send notifications, and to deliver notifications in your language.</li>
+      <li><strong>Purchase information</strong>: Purchases and payments for the paid plan (OshiVerse Pro) and for the Support Plan are processed by Apple, and the App does not collect payment information such as card numbers. To confirm that a purchase is valid, the App uses the transaction information issued by Apple (transaction ID, product, and purchase date and time). For the Support Plan, the transaction information, the channel being supported, and the listing period are saved on the server for the purpose of the listing, and the <strong>supporter name</strong> you optionally enter is shown in the App's listing and in share text.</li>
+      <li><strong>App usage</strong>: To improve features, Firebase Analytics (Google) collects in-app actions such as screen views and the number of times features are used, along with an identifier issued for each app installation. This data is not linked to information that identifies you, such as your name, and is not used for advertising.</li>
+      <li><strong>Information for preventing abuse</strong>: To verify that communications with our servers come from this App, we check the integrity of your device using Firebase App Check (Apple's App Attest).</li>
+      <li><strong>Display and tap counts for PR placements</strong>: To measure the effectiveness of listings, we record the number of PR impressions, taps, and sign-ups as daily counts (we do not record who viewed them).</li>
+    </ul>
+    <p>The App does not collect your name, address, location, contacts, or similar personal information.</p>
+
+    <h2>3. Handling of Google User Data</h2>
+    <p>Only when you sign in to Google through the "Link YouTube" and grant permission, the App uses the YouTube Data API scope (<code>https://www.googleapis.com/auth/youtube.force-ssl</code>) to perform only the following actions.</p>
+    <ul>
+      <li>Post a comment you have entered to a live chat, using your own account</li>
+      <li>When you choose "Import," read the list of channels you subscribe to on YouTube and add only the channels you select to your oshi list</li>
+      <li>When you take the action, subscribe to a channel or like a video, or display the current status of those actions</li>
+      <li>Display streams that you can watch with your account, such as members-only streams</li>
+      <li>Display the name of the channel to which you are posting a comment</li>
+    </ul>
+    <p>OshiVerse's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the features described above, and is not used for advertising or sold or disclosed to third parties. No human reads Google user data, except with your consent, where necessary for security purposes, or to comply with applicable law. The list of your subscribed channels is processed on your device, and only the channels you add as oshi are synced as your oshi list.</p>
+
+    <h2>4. Processing and Sharing of Information (Internal and External Handling)</h2>
+    <ul>
+      <li><strong>Storage on your device</strong>: Your registered oshi list, the display data obtained from YouTube and Twitch, and your sign-in information are stored on your device.</li>
+      <li><strong>Transmission to the developer's servers</strong>: The following information is sent to and stored on servers managed by the developer (Google Cloud / Firebase) in order to provide the App's features: (1) the tokens required to deliver push notifications, your device's language setting, and the list of YouTube channel IDs you follow; (2) when you are signed in, your oshi list, layout order, and settings (for syncing); (3) the public channel information when you add an oshi (to expand the App's VTuber directory; "who follows whom" is not sent); (4) Support Plan transaction information and the optional supporter name; (5) daily display and tap counts for PR placements; and (6) app usage (Firebase Analytics).</li>
+      <li><strong>Disclosure to third parties</strong>: Apart from processing by Google Cloud / Firebase (infrastructure and analytics providers) and Apple (payments and sign-in) as described above, we do not sell, share, or provide the information we collect to third parties. We also do not use it for advertising.</li>
+    </ul>
+
+    <h2>5. Storage of Information on Your Device (Cookies, etc.)</h2>
+    <p>The App stores information such as your settings and oshi list on your device (in the app's storage area). In addition, when the App displays the embedded YouTube player and the embedded Twitch player, YouTube (Google) and Twitch may store or access information on your device through cookies or similar technologies. These practices are governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitch Privacy Notice</a>.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <ul>
+      <li>Data obtained from the YouTube API is periodically refreshed and overwritten with the latest information while you use the App, and is not kept in an outdated state for more than 30 days.</li>
+      <li>Statistical data on the server (such as subscriber count trends) is deleted in order, starting with data older than 30 days.</li>
+      <li>When you delete an oshi, the corresponding data on your device is deleted immediately. When you delete the App, all data on your device is deleted.</li>
+      <li><strong>Account deletion</strong>: You can delete your account, and the oshi list, layout order, and settings saved on the server, at any time from "Settings" → "Delete account" in the App. If you were using Sign in with Apple, we also revoke the Sign in with Apple authorization, and if you signed in with Google, we also revoke Google's authorization for the App.</li>
+      <li>If you are unable to use the App, we also accept deletion requests through the contact address below.</li>
+    </ul>
+
+    <h2>7. Revoking Access</h2>
+    <p>You can revoke the Google access you have granted to the App at any time from the <a href="https://security.google.com/settings/security/permissions">security settings page of your Google Account</a>. You can stop using Sign in with Apple from "Settings" on your iPhone → your name → "Sign in with Apple."</p>
+
+    <h2>8. Contact</h2>
+    <p>For questions about this policy or the App's handling of information, please contact us by email at <a href="mailto:oshiverse-support@googlegroups.com">oshiverse-support@googlegroups.com</a>.</p>
+  </div>
+</body>
+</html>
